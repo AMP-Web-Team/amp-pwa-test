@@ -1,8 +1,27 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Fredericka_the_Great, Kalam, Montserrat} from "next/font/google";
 import "./globals.css";
+import GlobalFooter from "./components/GlobalFooter";
+import GlobalHeader from "./components/GlobalHeader";
 
 const inter = Inter({ subsets: ["latin"] });
+const fredericka = Fredericka_the_Great({
+  subsets: ["latin"],
+  display: 'swap',
+  weight: "400",
+  variable: '--fredericka',
+  style: 'normal'
+});
+const kalam = Kalam({
+  subsets: ["latin"],
+  weight: "300",
+  variable: '--kalam'
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
+  variable: '--montserrat'
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +34,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html className={`${inter.className} ${kalam.variable} ${montserrat.variable} ${fredericka.variable}`} lang="en">
+      <body className={`${inter.className} ${kalam.variable} ${montserrat.variable} ${fredericka.variable}`}>
+        <GlobalHeader/>
+        {children}
+      
+        <footer><GlobalFooter/></footer>
+      </body>
     </html>
   );
 }
