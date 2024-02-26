@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GlobalFooter = () => {
   return (
-    <div className=" w-full flex flex-col lg:flex-row p-20 gap-[50px] lg:gap-[150px] items-center">
+    <div className=" w-full flex flex-col lg:flex-row p-20 gap-[50px] lg:gap-[150px] items-center overflow-hidden">
       {/* Logo */}
       <div className=" w-80 max-w-80  min-w-72">
         <Image
@@ -14,7 +14,7 @@ const GlobalFooter = () => {
         />
       </div>
       {/* Footer Info */}
-      <div className=" flex flex-row gap-10 text-white border-gray-400 border-t border-b py-4 w-full px-10">
+      <div className=" flex flex-col items-center md:flex-row gap-10 md:items-start text-white border-gray-400 border-t border-b py-4 w-full px-10">
         <div className=" max-w-52">
           <p className=" font-bold">Hours of Operation</p>
           <p className="">

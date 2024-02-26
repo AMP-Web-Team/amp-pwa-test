@@ -16,6 +16,10 @@
   }
 }
 
+html , body{
+  scroll-behavior: smooth ;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -63,3 +67,35 @@ h4{
     text-wrap: balance;
   }
 }
+
+
+.NavigationMenuContent{
+
+  right:0px;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+
+.NavigationMenuContent[data-motion='from-start']{
+  animation-name: enterFromRight;
+
+}
+
+.NavigationMenuContent[data-motion='to-end']{
+  animation-name: exitToLeft;
+
+}
+
+
+
+@keyframes enterFromRight{
+  from{
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  to{
+    opacity: 1;
+    translate: tranlateX(200px);
+  }
+} 
+

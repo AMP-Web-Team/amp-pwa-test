@@ -3,6 +3,8 @@ import { Inter, Fredericka_the_Great, Kalam, Montserrat} from "next/font/google"
 import "./globals.css";
 import GlobalFooter from "./components/GlobalFooter";
 import GlobalHeader from "./components/GlobalHeader";
+import '@radix-ui/themes/styles.css';
+import { Theme } from '@radix-ui/themes';
 
 const inter = Inter({ subsets: ["latin"] });
 const fredericka = Fredericka_the_Great({
@@ -36,10 +38,10 @@ export default function RootLayout({
   return (
     <html className={`${inter.className} ${kalam.variable} ${montserrat.variable} ${fredericka.variable}`} lang="en">
       <body className={`${inter.className} ${kalam.variable} ${montserrat.variable} ${fredericka.variable}`}>
-        <GlobalHeader/>
-        {children}
+          <GlobalHeader/>
+          {children}
+          <footer><GlobalFooter/></footer>
       
-        <footer><GlobalFooter/></footer>
       </body>
     </html>
   );

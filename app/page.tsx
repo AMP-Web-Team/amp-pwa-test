@@ -33,7 +33,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" pr-[15%] pl-[15%] pt-[2%] pb-[2%]  bg-black-main ">
+      <section id="about" className=" pr-[15%] pl-[15%] pt-[2%] pb-[2%]  bg-black-main ">
         <div className=" flex flex-col">
           {/* Our Story Header */}
           <div className=" flex flex-row justify-center relative">

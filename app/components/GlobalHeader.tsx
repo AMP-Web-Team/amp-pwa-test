@@ -1,4 +1,6 @@
 import Image from "next/image";
+import MobileMenu from "./DropdownMenu";
+import { Menu } from "lucide-react";
 
 interface Link {
     title: string,
@@ -6,6 +8,7 @@ interface Link {
 }
 
 interface LinkItems extends Array<Link>{};
+
 
 
 
@@ -21,7 +24,8 @@ const pageLinks: Link[] = [
 
 const GlobalHeader = () => {
   return (
-    <nav className=" border-b border-gray-400">
+    <>
+    <nav className=" border-b border-gray-400 sticky top-0 bg-black">
       <div className=" flex flex-row justify-between py-2 px-[5%] items-center">
         <div className=" w-32">
           <Image
@@ -33,7 +37,8 @@ const GlobalHeader = () => {
           />
         </div>
 
-        <div>
+        
+        <div className=" hidden md:block  ">
             <ol className=" flex flex-row gap-8 text-lg">
                 {pageLinks.map((item)=>{
                     return(
@@ -42,8 +47,11 @@ const GlobalHeader = () => {
                 })}
             </ol>
         </div>
+        <MobileMenu />
+
       </div>
     </nav>
+    </>
   );
 };
 
