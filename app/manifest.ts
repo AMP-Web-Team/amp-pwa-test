@@ -2,14 +2,14 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'Next-PWA AMP Test Project',
+        name: 'Sir Benjis Donuts - AMP PWA',
         short_name: 'Benjis Donuts PWA',
-        description: ' Serwist w/ Next.js',
+        description: 'Download PWA to view the menu offline and order through the app',
         start_url: '/',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#fff',
-        theme_color: '#fff',
+        background_color: '#000000',
+        theme_color: '#474747',
         icons: [
             {
                 src: '/logo-transparent-bg.webp',

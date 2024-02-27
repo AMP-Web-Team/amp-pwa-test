@@ -98,6 +98,8 @@ export default function Home() {
         </div>
       </section>
 
+      <button id="install-pwa" hidden> Install</button>
+
     </main>
   );
 }
