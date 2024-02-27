@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import withSerwistInit from '@serwist/next';
 
-export default nextConfig;
+const withSerwist = withSerwistInit({
+    swSrc: 'app/sw.ts', // Where te service worker src is
+    swDest: 'public/sw.js' // Where the service worker code will end up
+});
+export default withSerwist({
+//     Next.js config options
+    
+});
+// const nextConfig = {};
+//
+// export default nextConfig;
