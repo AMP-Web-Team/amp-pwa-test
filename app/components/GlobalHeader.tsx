@@ -25,7 +25,7 @@ const pageLinks: Link[] = [
 const GlobalHeader = () => {
   return (
     <>
-    <nav className=" border-b border-gray-400 sticky top-0 bg-black">
+    <nav className=" z-50 border-b border-gray-400 sticky top-0 bg-black">
       <div className=" flex flex-row justify-between py-2 px-[5%] items-center">
         <div className=" w-32">
           <Image

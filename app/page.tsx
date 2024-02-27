@@ -50,7 +50,7 @@ export default function Home() {
             <hr className=" text-white w-full absolute top-1/2 z-0" />
           </div>
 
-          <div className=" flex flex-col md:flex-row mt-4 items-center gap-8">
+          <div className=" text-center md:text-left flex flex-col md:flex-row mt-4 items-center gap-8">
             <div className=" flex-1 flex flex-row justify-center">
               <p className=" w-3/5">
               Launched in 2017 at local orlando farmers markets & inspired by our pie making past, we became driven to provide guests with the best mini donut and experience, every single time. Our quaint donut shop located inside the vibrant plant street market & crooked can brewery is an experience worthy of confectionary indulgence. All glazes and toppings are made ‘in house’ we take time and invest in our high quality products, you can taste the difference.
@@ -74,8 +74,8 @@ export default function Home() {
       </section>
 
       <section className=" pt-[2%] pb-[2%] bg-black-main ">
-        <div className=" flex flex-row">
-          <div className=" flex-1 flex flex-col justify-center">
+        <div className=" flex justify-center flex-col md:flex-row">
+          <div className=" text-center md:text-left flex-1 flex flex-col justify-center">
             <div className="w-3/5 m-auto">
               <h2>
               The ‘Willy Wonka’ of Donuts
@@ -85,7 +85,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" flex-1 bg-blue-600 h-[90vh]">
+          <div className=" flex-1 bg-blue-600 ">
             <Image
                 className=" w-full h-full object-cover object-bottom"
                 src={`/img01.webp`}
