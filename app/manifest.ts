@@ -16,6 +16,11 @@ export default function manifest(): MetadataRoute.Manifest {
                 sizes: '200x200',
                 type: 'image/webp',
             },
+            {
+                src: '/logo-transparent-bg.webp',
+                sizes: '520x520',
+                type: 'image/webp',
+            },
         ],
     };
 }
